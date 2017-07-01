@@ -1,0 +1,14 @@
+.users {
+  max-height: 200px;
+  overflow-y: scroll;
+  overflow: auto;
+}
+
+.user {
+  padding: 15px 20px;
+}
+
+.highlight {
+  background-color: black;
+  color: white;
+}

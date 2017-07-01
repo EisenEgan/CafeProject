@@ -1,0 +1,18 @@
+<div class="row btn-row" *ngIf="mode=='users'">
+  <div class="col-xs-4 btn-col">
+    <button (click)="create()">Create</button>
+  </div>
+  <div class="col-xs-4 btn-col">
+    <button [disabled]="!isSelected" (click)="edit()">Edit</button>
+  </div>
+  <div class="col-xs-4 btn-col">
+    <button [disabled]="!isSelected" (click)="delete()">Delete</button>
+  </div>
+</div>
+<div class="row btn-row" *ngIf="mode=='edit'">
+  <div class="col-xs-4 btn-col">
+    <button (click)="cancel()">Cancel</button>
+  </div>
+</div>
+<app-users (isSelected)='onSelected($event)' *ngIf="mode=='users'"></app-users>
+<app-edit (onAdd)="onAdd($event)" *ngIf="mode=='edit'" [user]="userSelected"></app-edit>

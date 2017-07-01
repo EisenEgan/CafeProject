@@ -1,0 +1,7 @@
+<div class="users">
+  <div *ngFor="let user of users" class="user" [ngClass]="{'highlight': user==selected}">
+    <div (click)="highlight(user)">
+      {{ user.firstName + " " + user.lastName }}
+    </div>
+  </div>
+</div>

@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  loggedIn: Boolean = false;
+  login(event) {
+    var username = event.user.username
+    var password = event.user.password
+    if (username == "Luke" && password == "Skywalker") {
+      this.loggedIn = true;
+    }
+  }
 }
