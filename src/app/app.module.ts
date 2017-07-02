@@ -8,6 +8,9 @@ import { UsersComponent } from './users/users.component';
 import { EditComponent } from './edit/edit.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UsersService } from './services/users.service';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import { UsersService } from './services/users.service';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
   ],
   providers: [UsersService],
   bootstrap: [AppComponent]

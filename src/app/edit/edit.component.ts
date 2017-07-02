@@ -28,9 +28,9 @@ export class EditComponent implements OnChanges {
   ngOnChanges() {
     if (this.user) {
       this.addUser = false
-      this.oldUser = { ...this.user }
+      //this.oldUser = { ...this.user }
     } else {
-      this.user = { firstName: '', lastName: '', startDate: '', email: '' }
+      this.user = { $key: '', firstName: '', lastName: '', startDate: '', email: '' }
       this.addUser = true
     }
   }
@@ -40,7 +40,7 @@ export class EditComponent implements OnChanges {
     if (this.addUser) {
       this.usersService.addUser(this.user)
     } else {
-      this.usersService.editUser(this.oldUser, this.user)
+      this.usersService.editUser(this.user)
     }
     this.onAdd.emit('users')
     // console.log(this.oldUser)

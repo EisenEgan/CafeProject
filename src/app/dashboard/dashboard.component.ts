@@ -37,7 +37,8 @@ export class DashboardComponent implements OnInit {
 
   delete() {
     this.isSelected = false;
-    this.usersService.deleteUser(this.userSelected)
+    //console.log(this.userSelected.$key)
+    this.usersService.deleteUser(this.userSelected.$key)
   }
 
   onAdd(event: String) {

@@ -1,8 +1,9 @@
 export class User {
   constructor(
-    public firstName: String,
-    public lastName: String,
-    public startDate: String,
-    public email: String
+    public $key: string,
+    public firstName: string,
+    public lastName: string,
+    public startDate: string,
+    public email: string
   ) { }
 }

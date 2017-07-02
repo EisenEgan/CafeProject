@@ -1,0 +1,7 @@
+[
+  { "firstName": "John", "lastName": "Thompson", "startDate": "2017-01-01", "email": "jthompson@gmail.com"},
+  { "firstName": "Mark", "lastName": "Waters", "startDate": "2017-01-01", "email": "mwaters@gmail.com"},
+  { "firstName": "Hans", "lastName": "Gruber", "startDate": "2017-01-01", "email": "hgrub@gmail.com"},
+  { "firstName": "John", "lastName": "Lincoln", "startDate": "2017-01-01", "email": "lincobaby32@gmail.com"},
+  { "firstName": "Walter", "lastName": "Hillsborough", "startDate": "2017-01-01", "email": "wallhill84@gmail.com"}
+]
